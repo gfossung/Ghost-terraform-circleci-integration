@@ -5,6 +5,13 @@ terraform {
       version = "~> 3.0" # Allows only the rightmost version component to increment
     }
   }
+  cloud {
+    organization = "gfossung"
+
+    workspaces {
+      name = "Ghost-terraform-circleci-integration"
+    }
+  }
 }
 
 provider "aws" {
