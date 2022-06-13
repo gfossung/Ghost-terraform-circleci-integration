@@ -9,18 +9,5 @@ ghost-tg ="dev-ghost-tg"
 
 
 
-terraform {
-  cloud {
-    organization = "gfossung"
-
-    workspaces {
-      name = "learn-terraform-circleci"
-    }
-  }
-}
-
-
-
-
 
 
